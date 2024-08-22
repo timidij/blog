@@ -1,7 +1,6 @@
 *{
     margin: 0px;
     padding: 0px;
-    /* font-size: 16px; */
     box-sizing: border-box;
 }
 
@@ -24,36 +23,42 @@
 .button-style1{
 margin: 0px;
 }
+.post{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
 .minutes{
     color: var(--dark-purple);
 
 }
 .blog-main{
     background-color: var(--light-blue);
-    height: 100vh;
-   
-}
-.firstblog{
+    /* height: 100vh; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    min-height: auto;
-   
    
 }
+
 .eachblog{
     background-color: var(--light-purple);
-    padding: 10px;
-    border: none;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     border-radius: 10px;
-   /* gap: 10px; */
+    min-height: 175px;
+    margin: 5px;
+
+
+}
+.image{
+    height: 50%;
 }
 .eachblog > p{
     font-size: 12px;
     line-height: 16px;
- 
 }
 .eachblog > h3{
     font-size: 16px;
@@ -67,7 +72,23 @@ margin: 0px;
    
     
 }
-.blogt>h3{
+.firstblog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    height: 50%;
+    border-radius: 0px 0px 10px 10px;
+    margin: 0px;
+
+ 
+}
+
+.artic{
+    display: flex;
+}
+.blogt > h3{
     font-size: 40px;
     font-weight: bold;
 }
