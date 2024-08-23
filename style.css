@@ -16,16 +16,21 @@
     color: #FFFFFF;
     background-color: var(--dark-purple);
     border-radius: 4px;
-    padding: 5px;
+    padding: 10px;
+    gap: 10px;
     margin-left: auto;
+    width: 141px;
+    
    
 }
 .button-style1{
 margin: 0px;
 }
+
 .post{
     display: grid;
     grid-template-columns: auto auto;
+    grid-template-rows: 1fr;
 }
 
 .minutes{
@@ -34,10 +39,11 @@ margin: 0px;
 }
 .blog-main{
     background-color: var(--light-blue);
-    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding: 5%;
    
 }
 
@@ -48,9 +54,8 @@ margin: 0px;
     flex-direction: column;
     justify-content: space-evenly;
     border-radius: 10px;
-    min-height: 175px;
     margin: 5px;
-
+    min-height: 300px;
 
 }
 .image{
@@ -70,7 +75,6 @@ margin: 0px;
     justify-content: center;
     color: var(--dark-purple);
    
-    
 }
 .firstblog{
     display: flex;
@@ -84,13 +88,42 @@ margin: 0px;
 
  
 }
-
-.artic{
-    display: flex;
+.firstblog > h3{
+    margin-top: 4px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+.firstblog > p{
+    margin-top: 4px;
 }
 .blogt > h3{
     font-size: 40px;
     font-weight: bold;
 }
+.left-side{
+    margin: 0px;
+}
+.blog-post{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
 
+/* for tablet */
+@media (max-width:850px){
+    .blog-post{
+        grid-template-columns: auto;
+    }
+    .blog{
+        margin-top: 10%;
+    }
+}
+
+/* for mobile */
+
+@media (max-width:550px){
+    .blog{
+        margin-top: 10%;
+    }
+}
 
