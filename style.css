@@ -107,6 +107,7 @@ margin: 0px;
 .blog-post{
     display: grid;
     grid-template-columns: 1fr 2fr;
+    gap: 20px;
 }
 
 /* for tablet */
